@@ -1,0 +1,21 @@
+
+Traceback (most recent call last):
+  File "C:\Users\Egon\Documents\Businessfinder3\BusinessFinder\script.py", line 43, in load_leads
+    data = getDataFromGoogleMaps(places, query,maxCount)
+  File "C:\Users\Egon\Documents\Businessfinder3\BusinessFinder\modules\googleMapsScraper.py", line 88, in getDataFromGoogleMaps
+    browser.startBrowser('chromedriver.exe',url,Browser.Chrome_UserAgent,False)
+  File "C:\Users\Egon\Documents\Businessfinder3\BusinessFinder\browser.py", line 23, in startBrowser
+    self.driver=webdriver.Chrome(path,options=options)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\chrome\webdriver.py", line 76, in __init__
+    RemoteWebDriver.__init__(
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 252, in start_session
+    response = self.execute(Command.NEW_SESSION, parameters)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\ProgramData\Anaconda3\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: This version of ChromeDriver only supports Chrome version 94
+Current browser version is 96.0.4664.45 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+
